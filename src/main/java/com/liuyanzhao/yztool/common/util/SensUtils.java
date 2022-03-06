@@ -3,7 +3,6 @@ package com.liuyanzhao.yztool.common.util;
 import io.github.biezhi.ome.OhMyEmail;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -41,12 +40,5 @@ public class SensUtils {
         return temp;
     }
 
-    public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        list.add("11");
-        list.add("22");
-        list.add("13");
-        System.out.println(listToStr(list));
-    }
 
 }
