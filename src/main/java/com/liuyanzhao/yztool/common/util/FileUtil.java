@@ -16,6 +16,13 @@ import java.util.UUID;
  */
 public class FileUtil {
 
+    // 默认上传路径
+    public static final String DEFAULT_UPLOAD_PATH = System.getProperties().getProperty("user.home") + "/sens/upload/";
+
+    public static Map<String, String> upload(MultipartFile file) throws Exception {
+
+        return upload(file, DEFAULT_UPLOAD_PATH);
+    }
 
     /**
      * 文件上传
@@ -25,7 +32,7 @@ public class FileUtil {
      * @return
      */
     public static Map<String, String> upload(MultipartFile file, String uploadPath) throws Exception {
-        final Map<String, String> resultMap = new HashMap<>(6);
+        final Map<String, String> resultMap = new HashMap<String, String>(6);
         try {
             final File mediaPath = new File(uploadPath);
             if (!mediaPath.exists()) {
