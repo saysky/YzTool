@@ -12,7 +12,7 @@
 
     <groupId>com.liuyanzhao</groupId>
     <artifactId>YzTool</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 
 
     <!-- 项目信息 -->
@@ -39,7 +39,7 @@
     <!-- 开发者 -->
     <developers>
         <developer>
-            <name>saysky</name>
+            <name>言曌(Saysky)</name>
             <email>847064370@qq.com</email>
             <organization>言曌博客咨询部</organization>
         </developer>
@@ -171,6 +171,13 @@
             <artifactId>hutool-all</artifactId>
             <version>${hutool-all.version}</version>
         </dependency>
+
+        <!--Shiro-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.4.0</version>
+        </dependency>
     </dependencies>
 
 
@@ -267,16 +274,6 @@
                 </plugins>
             </build>
             <distributionManagement>
-                <!--                <snapshotRepository>-->
-                <!--                    <id>sonatype-nexus-snapshots</id>-->
-                <!--                    <name>Sonatype Nexus Snapshots</name>-->
-                <!--                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>-->
-                <!--                </snapshotRepository>-->
-                <!--                <repository>-->
-                <!--                    <id>sonatype-nexus-staging</id>-->
-                <!--                    <name>Nexus Release Repository</name>-->
-                <!--                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
-                <!--                </repository>-->
                 <snapshotRepository>
                     <id>sonatype-nexus-snapshots</id>
                     <name>Sonatype Nexus Snapshots</name>
